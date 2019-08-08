@@ -1,7 +1,10 @@
 import React from 'react';
+import {Formik, Form, FieldArray, ErrorMessage, Field} from 'formik';
 
-function EventForm() {
+export default class EventForm extends React.Component {
+  render() {
+    return(
 
+    )
+  }
 }
-
-export default EventForm;
