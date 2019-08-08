@@ -17,3 +17,10 @@ export const SignupSchema = Yup.object().shape({
     .max(72, 'Password too long!')
     .required('Required')
 });
+
+export const EventSchema = Yup.object().shape({
+  name: Yup.string().required('Required'),
+  date: Yup.string().required('Required'),
+  pets: Yup.array(),
+  description: Yup.string()
+});
