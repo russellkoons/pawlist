@@ -27,7 +27,13 @@ export default class EventForm extends React.Component {
             isSubmitting
           }) => (
             <Form>
-              
+              <label htmlFor="name">Name: </label>
+              <Field type="text" id="name" />
+              <ErrorMessage name="name" />
+              <label htmlFor="date">Date: </label>
+              <Field type="date" id="date" name="date" />
+              <label htmlFor="pets">Pets: </label>
+              <Field type="text" id="pets" name="pets" />
             </Form>
           )}
         />
