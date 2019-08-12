@@ -34,6 +34,12 @@ export default class EventForm extends React.Component {
               <Field type="date" id="date" name="date" />
               <label htmlFor="pets">Pets: </label>
               <Field type="text" id="pets" name="pets" />
+              <label htmlFor="location">Location: </label>
+              <Field type="text" id="location" />
+              <label htmlFor="desc">Description: </label>
+              <Field type="text" id="desc" />
+              <label htmlFor="freq">Frequency: </label>
+              <Field type="text" id="freq" />
             </Form>
           )}
         />
