@@ -32,6 +32,7 @@ export const EventSchema = Yup.object().shape({
 export const PetSchema = Yup.object().shape({
   name: Yup.string().required('Required'),
   info: Yup.object().shape({
+    type: Yup.string(),
     birthday: Yup.string(),
     breed: Yup.string(),
     color: Yup.string(),

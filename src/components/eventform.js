@@ -32,6 +32,7 @@ export default class EventForm extends React.Component {
               <ErrorMessage name="name" />
               <label htmlFor="date">Date: </label>
               <Field type="date" id="date" name="date" />
+              <ErrorMessage name="date" />
               <label htmlFor="pets">Pets: </label>
               <Field type="text" id="pets" name="pets" />
               <label htmlFor="location">Location: </label>

@@ -15,6 +15,7 @@ export class PetForm extends React.Component {
           id="new-pet"
           initialValues={{
             name: '',
+            type: '',
             birthday: '',
             breed: '',
             color: '',
@@ -33,6 +34,14 @@ export class PetForm extends React.Component {
             handleChange
           }) => (
             <Form>
+              <label htmlFor="name">Name: </label>
+              <Field type="text" id="name" />
+              <ErrorMessage name="name" />
+              <label htmlFor="type">Type of pet: </label>
+              <Field type="text" id="type" />
+              <label htmlFor="bday">Birthday: </label>
+              <Field type="date" id="bday" />
+              <label htmlFor="breed">Breed: </label>
               
             </Form>
           )}
