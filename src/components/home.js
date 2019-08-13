@@ -7,9 +7,9 @@ export default class Home extends React.Component {
   render() {
     return(
       <div>
-      <Nav />
-      <Splash />
-      <Footer />
+        <Nav />
+        <Splash />
+        <Footer />
       </div>
     )
   }
