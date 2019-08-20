@@ -43,6 +43,10 @@ export class PetForm extends React.Component {
               <Field type="date" id="bday" />
               <label htmlFor="breed">Breed: </label>
               <Field type="text" id="breed" />
+              <label htmlFor="color">Color: </label>
+              <Field type="text" id="color" />
+              <label htmlFor="weight"> Weight: </label>
+              <Field type="number" id="weight" />
               
             </Form>
           )}
