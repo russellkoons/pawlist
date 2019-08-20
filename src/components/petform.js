@@ -42,6 +42,7 @@ export class PetForm extends React.Component {
               <label htmlFor="bday">Birthday: </label>
               <Field type="date" id="bday" />
               <label htmlFor="breed">Breed: </label>
+              <Field type="text" id="breed" />
               
             </Form>
           )}
