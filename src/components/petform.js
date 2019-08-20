@@ -47,7 +47,16 @@ export class PetForm extends React.Component {
               <Field type="text" id="color" />
               <label htmlFor="weight"> Weight: </label>
               <Field type="number" id="weight" />
-              
+              <label htmlFor="vet">Vet Name: </label>
+              <Field type="text" id="vet" />
+              <label htmlFor="vet-no">Phone Number: </label>
+              <Field type="text" id="vet-no" />
+              <legend>Shots</legend>
+              <FieldArray type="text" name="shots" render={arrayHelpers => (
+                <div>
+                  
+                </div>
+              )} />
             </Form>
           )}
         />
