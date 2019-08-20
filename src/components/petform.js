@@ -54,9 +54,31 @@ export class PetForm extends React.Component {
               <legend>Shots</legend>
               <FieldArray type="text" name="shots" render={arrayHelpers => (
                 <div>
-                  
+                  {values.shots && values.shots.length > 0 ? (
+                    values.shots.map((shot, index) => (
+                      <div key={index}>
+                        <Field name={'shots-' + index} />
+                        <input
+                          type="button"
+                          onClick={() => arrayHelpers.push('')}
+                        >
+                          +
+                        </input>
+                        <input
+                          type="button"
+                          onClick={() => arrayHelpers.remove(index)}
+                        >
+                          -
+                        </input>
+                      </div>
+                    ))
+                  ) : (
+                    <input type="button" onClick={() => arrayHelpers.push('')}>
+                      Add ingredient
+                    </input>
+                  )}
                 </div>
-              )} />
+              )} /><br/>
             </Form>
           )}
         />
