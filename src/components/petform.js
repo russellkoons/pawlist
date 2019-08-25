@@ -108,6 +108,7 @@ export class PetForm extends React.Component {
               )} />
               <label htmlFor="pic">Picture: </label>
               <Field type="text" id="pic" />
+              <Field type="submit" id="pet-submit" />
             </Form>
           )}
         />
